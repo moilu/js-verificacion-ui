@@ -8,7 +8,7 @@ codes.forEach((code, idx) => {
             codes[idx].value = '';
             setTimeout(() => codes[idx + 1].focus());
         } else if(e.key === 'Backspace') {
-            setTimeout(() => codes[idx + 1].focus());
+            setTimeout(() => codes[idx - 1].focus());
         };
     });
 });
